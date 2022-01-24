@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купить моноподы для селфи в интернет-магазине Devise</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header_top">
+            <a href="#" class="header_logo"><img src="" alt="Devise"></a>
+            <nav class="header-navigation">
+                <div class="header_top">
+                    <div class="header_search">
+                        <input type="text" id="search_form" placeholder="Текст поиска">
+                        <label for="search_form">Найти</label>
+                    </div>
+                    <a href="#">Войти</a>
+                    <a href="#">Сравнить</a>
+                    <a href="#">Корзина</a>
+                </div>
+                <div class="header_undertop">
+                    <a href="catalog.html"></a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Гарантия</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main_inner">
+            <section class="catalog_top">
+                <div class="catalog_head">
+                    <h1>Моноподы для селфи</h1>
+                    <ul class="breadcrumps">
+                        <li class="breadcrumps_item"><a class="breadcrumps_link" href="index.html">Главная</a></li>
+                        <li class="breadcrumps_item"><a class="breadcrumps_link" href="">Каталог товаров</a></li>
+                        <li class="breadcrumps_item"><a class="breadcrumps_link" href="">Моноподы для селфи</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- по фильтрам относительно нейминга есть вопрос: лучше ориентироваться, скажем, на filter-price или на очередность, например: filter-first? -->
+            <section class="catalog_filters">
+                <h3>Фильтр:</h3>
+                <form class="catalog_filter_form" action="" method="get">
+                    <!-- <div class="filter_first">
+                        <p><b>Стоимость</b></p>
+                    </div> не разобралась, как эту штуку лучше сделать-->
+                    <fieldset class="catalog_filter_group">
+                        <legend class="catalog_filter_title">Цвет</legend>
+                        <ul>
+                            <li>
+                                <label class="control">
+                                    <input class="control_input" type="checkbox" name="black" checked>Черный
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control">
+                                    <input class="control_input" type="checkbox" name="white" checked>Белый
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control">
+                                    <input class="control_input" type="checkbox" name="blue">Синий
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control">
+                                    <input class="control_input" type="checkbox" name="red">Красный
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control">
+                                    <input class="control_input" type="checkbox" name="rose">Розовый
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="catalog_filter_group">
+                        <legend class="catalog_filter_title">Bluetooth</legend>
+                        <ul class="catalog_filter_list">
+                            <li class="catalog_filter_item">
+                                <label class="control">
+                                    <input class="control_input" type="radio" name="product_group" value="true"
+                                        checked>Есть
+                                </label>
+                            </li>
+                            <li class="catalog_filter_item">
+                                <label class="control">
+                                    <input class="control_input" type="radio" name="product_group" value="false">Нет
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button" type="submit">Показать</button>
+                </form>
+            </section>
+
+            <section class="catalog_products">
+                <h2 class="visually-hidden">Купить монопод в интернет-магазине Devise</h2>
+                <div class="catalog_sort">
+                    <p>Сортировка:</p>
+                    <select class="sort_control" aria-label="Сортировка">
+                        <option value="popular">Популярные</option>
+                        <option value="cheap">Сначала дешевые</option>
+                        <option value="expensive">Сначала дорогие</option>
+                    </select>
+                    <!-- <span></span> для треугольничков справа -->
+                </div>
+                <div class="products_container">
+                    <div class="item">
+                        <a href="#"><img src="" alt="Любительская селфи-палка"></a>
+                        <a href="#">Любительская селфи-палка</a>
+                        <span>500 ₽</span>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="" alt="Профессиональная селфи-палка"></a>
+                        <a href="#">Профессиональная селфи-палка</a>
+                        <span>1 500 ₽</span>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="" alt="Непотопляемая селфи-палка"></a>
+                        <a href="#">Непотопляемая селфи-палка</a>
+                        <span>2 500 ₽</span>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="" alt="Селфи-палка «Следуй за мной»"></a>
+                        <a href="#">Селфи-палка «Следуй за мной»</a>
+                        <span>1 500 ₽</span>
+                    </div>
+                </div>
+                <button type="button">Загрузить ещё</button>
+
+                <ul class="pagination">
+                    <li class="pagination_item">
+                        <a class="pagination_link pagination_prev pagination_disabled" href="#">
+                            <span class="visually-hidden">Назад</span>
+                        </a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link pagination-current" href="#">1</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link" href="#">2</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link" href="#">3</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination-link" href="#">4</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination-link" href="#">5</a>
+                    </li>
+                    <li class="pagination_item">
+                        <a class="pagination_link pagination_next" href="#">
+                            <span class="visually-hidden">Вперёд</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="footer_container">
+                <a href="#" class="footer_logo"><img src="" alt="интернет-магазин Devise"></a>
+                <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <!-- <span></span> для черточки -->
+                <nav class="footer_nav">
+                    <a href="#">Доставка</a>
+                    <a href="#">Гарантия</a>
+                    <a href="#">Контакты</a>
+                </nav>
+                <div class="socials">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+
+                <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+                <a href="https://htmlacademy.ru/"><img src="" alt="html academy"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

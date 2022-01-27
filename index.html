@@ -5,100 +5,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devise</title>
+    <title>Device</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header_top">
-            <a href="#" class="header_logo"><img src="" alt="Devise"></a>
+        <header class="header-top">
+            <a class="header-logo"><img src="" alt="Device"></a>
             <nav class="header-navigation">
-                <div class="header_top">
-                    <div class="header_search">
-                        <input type="text" id="search_form" placeholder="Текст поиска">
-                        <label for="search_form">Найти</label>
-                    </div>
+                <div class="header-top">
+                    <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
+                        <input type="search" name="header-search" placeholder="Текст поиска">
+                        <input type="submit" value="Найти">
+                    </form>
                     <a href="#">Войти</a>
                     <a href="#">Сравнить</a>
                     <a href="#">Корзина</a>
                 </div>
-                <div class="header_undertop">
-                    <a href="catalog.html"></a>
+                <div class="header-undertop">
+                    <a class="dropdown" href="catalog.html">Каталог товаров</a>
                     <a href="#">Доставка</a>
                     <a href="#">Гарантия</a>
                     <a href="#">Контакты</a>
                 </div>
             </nav>
             <h1 class="visually-hidden">Интернет-магазин Device</h1>
-            <section class="header_slider">
-                <div class="header_slider_item">
-                    <img class="header_slider-image" src="" alt="Фото квадрокоптера с лазером">
-                    <button class="slider-button slider-prev" type="button">
-                        <span class="visually-hidden">Предыдущее фото</span>
-                    </button>
-                    <button class="slider-button slider-next" type="button">
-                        <span class="visually-hidden">Следующее фото</span>
-                    </button>
-                    <div class="header_slider_content">
-                        <h2 class="header_slider-title">Порхает как бабочка, жалит как пчела!</h2>
-                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                        <a href="#">Подробнее</a>
-                        <ol class="slider-pagination">
-                            <li class="slider-pagination-item">
-                                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                                    <span class="visually-hidden">1 фото</span>
-                                </button>
-                            </li>
-                            <li class="slider-pagination-item">
-                                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                                    <span class="visually-hidden">2 фото</span>
-                                </button>
-                            </li>
-                            <li class="slider-pagination-item">
-                                <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                                    <span class="visually-hidden">3 фото</span>
-                                </button>
-                            </li>
-                        </ol>
-                        <span><b>800 м</b><br>Дальность полета</span>
-                        <span><b>50 м</b><br>Радиус поражения</span>
-                    </div>
-                </div>
+            <section class="header-slider">
+                <h2 class="visually-hidden">Лучшие гаджеты от интернет-магазина Device</h2>
+                <ul class="header-slider-list">
+                    <li class="header-slider-item">
+                        <img class="header-slider-image" src="" alt="Фото квадрокоптера с лазером">
+                        <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+                        <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+                        <div class="header-slider-content">
+                            <p class="header-slider-title"><b>Порхает как бабочка, жалит как пчела!</b></p>
+                            <p class="header-slider-descr">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                            <a href="#">Подробнее</a>
+                            <div class="header-slider-parameters">
+                                <p><b>800 м</b><br>Дальность полета</p>
+                                <p><b>50 м</b><br>Радиус поражения</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-slider-item">
+                        <img class="header-slider-image" src="" alt="Фитнес-браслет для похудения">
+                        <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+                        <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+                        <div class="header-slider-content">
+                            <p class="header-slider-title"><b>Худеем правильно!</b></p>
+                            <p class="header-slider-descr">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                            <a href="#">Подробнее</a>
+                            <div class="header-slider-parameters">
+                                <p><b>48 часов</b><br>Без подзарядки</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-slider-item">
+                        <img class="header-slider-image" src="" alt="Длинная палка для селфи">
+                        <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+                        <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+                        <div class="header-slider-content">
+                            <p class="header-slider-title"><b>Делай селфи как Бен Стиллер!</b></p>
+                            <p class="header-slider-descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+                            <a href="#">Подробнее</a>
+                            <div class="header-slider-parameters">
+                                <p><b>8,5 м</b><br>Длина палки</p>
+                                <p><b>5 кг</b><br>Вес палки</p>
+                                <p><b>Карбон</b><br>Материал</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ol class="header-slider-pagination">
+                    <li class="slider-pagination-item">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+                    </li>
+                </ol>
             </section>
         </header>
         <main class="main-index">
-            <div class="catalog">
+            <section class="catalog">
                 <h2 class="visually-hidden">Популярные товары</h2>
                 <ul class="items">
                     <li class="item">
-                        <img src="" alt="">
                         <a href="#">Виртуальная реальность</a>
                     </li>
                     <li class="item">
-                        <img src="" alt="">
                         <a href="#">Моноподы для селфи</a>
                     </li>
                     <li class="item">
-                        <img src="" alt="">
                         <a href="#">Экшн-камеры</a>
                     </li>
                     <li class="item">
-                        <img src="" alt="">
                         <a href="#">Фитнес-браслеты</a>
                     </li>
                     <li class="item">
-                        <img src="" alt="">
                         <a href="#">Умные часы</a>
                     </li>
                     <li class="item">
-                        <img src="" alt="">
                         <a href="#">Квадрокоптеры</a>
                     </li>
                 </ul>
-            </div>
+            </section>
             <section class="delivery">
-                <h2 class="visually-hidden">Доставка от интернет-магазина Devise</h2>
-                <div class="slider_conditions">
+                <h2 class="visually-hidden">Доставка от интернет-магазина Device</h2>
+                <div class="slider-conditions">
                     <ul>
                         <li>Доставка</li>
                         <li>Гарантия</li>
@@ -107,17 +142,21 @@
                     <dl>
                         <dt>Доставка</dt>
                         <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+                        <dt>Гарантия</dt>
+                        <dd>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</dd>
+                        <dt>Кредит</dt>
+                        <dd>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</dd>
                     </dl>
                 </div>
-                <div class="delivery_on_order">
-                    <!-- <img src="" alt=""> иконка по доставке -->
-                    <p>Доставим редкий товар под заказ</p>
-                    <span>i</span>
-                    <!-- по поводу i сомневаюсь, возможно, есть спец значок под это дело -->
-                </div>
+            </section>
+            <section class="delivery-on-order">
+                <h2 class="visually-hidden">Доставка гаджетов под заказ от интернет-магазина Device</h2>
+                <div class="delivery-on-order-icon"></div>
+                <p>Доставим редкий товар под заказ</p>
+                <img src="" alt="">
             </section>
             <section class="about">
-                <div class="about_us">
+                <div class="about-us">
                     <h2>О нас</h2>
                     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -132,38 +171,38 @@
                     <h2 class="contacts">Контакты</h2>
                     <p>Вы можете забрать товар сами, заехав в наш офис.<br> Заодно сможете проверить работоспособность покупки.
                     </p>
-                    <h3>Интернет-магазин «Девайс»</h3>
-                    <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br><a href="tel:+78128121212">+7 (812)
-                            812-12-12</a></p>
-                    <h3>Время работы</h3>
+                    <p><b>Интернет-магазин «Девайс»</b></p>
+                    <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+                    <p><b>Время работы</b></p>
                     <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-                    <button type="button">Напишите нам</button>
-                    <!-- здесь выбирала между кнопкой и ссылкой, на кнопке остановилась, так как она, по идее, вызывает окошко для вопроса. Но может быть и ссылка же? Как определить? -->
+                    <a href="#">Напишите нам</a>
                 </div>
             </section>
             <section class="subscribe">
                 <h2>Подпишитесь на рассылку</h2>
                 <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-                <label for="subscribe_form">Подписаться</label>
-                <input type="email" name="email" id="subscribe_form" placeholder="Ваш e-mail">
+                <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
+                    <input type="email" name="email" id="subscribe-form" placeholder="Ваш e-mail">
+                    <button>Подписаться</button>
+                </form>
                 <p>Это бесплатно</p>
             </section>
         </main>
         <footer>
-            <div class="footer_container">
-                <a href="#" class="footer_logo"><img src="" alt="интернет-магазин Devise"></a>
+            <div class="footer-container">
+                <a class="footer-logo"><img src="" alt="интернет-магазин Device"></a>
                 <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <!-- <span></span> для черточки -->
-                <nav class="footer_nav">
-                    <a href="#">Доставка</a>
-                    <a href="#">Гарантия</a>
-                    <a href="#">Контакты</a>
-                </nav>
-                <div class="socials">
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Twitter</a>
-                </div>
+                <ul class="footer-nav">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="footer-socials">
+                    <li><a href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/htmlacademy_ru">Twitter</a></li>
+                </ul>
 
                 <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
                 <a href="https://htmlacademy.ru/"><img src="" alt="html academy"></a>

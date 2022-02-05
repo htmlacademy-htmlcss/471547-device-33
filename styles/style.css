@@ -262,3 +262,69 @@ h2 {
 .footer-socials {
     list-style: none;
 }
+
+
+/* Блок с фильтрами */
+
+
+/* Пока что не трогала форму */
+
+
+/* Страница каталога catalog.html*/
+
+
+/* General */
+
+.main-inner {
+    color: #000000;
+}
+
+
+/* Header */
+
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.breadcrumbs-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.breadcrumbs-item {
+    list-style-type: none;
+}
+
+.catalog-filters {
+    background-color: #f0f0f0;
+}
+
+
+/* Блок сортировки */
+
+
+/* Сетка с товарами */
+
+.products-item {
+    list-style-type: none;
+}
+
+.product-price {
+    line-height: 21.33px;
+    color: #444444;
+}
+
+.product-name {
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Пагинация */

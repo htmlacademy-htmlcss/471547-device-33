@@ -1,0 +1,264 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("fonts/rubik/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+/* скрыла пока что так заголовки, которые не будут выводиться */
+
+.visually-hidden {
+    display: none;
+}
+
+
+/* General */
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.btn-more {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 21.13px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #000000;
+}
+
+
+/* Header */
+
+
+/* Формы пока что не трогала */
+
+.header-top {
+    background-color: #FFC700;
+    color: #000000;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-undertop {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 21.13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+
+/* Header slider */
+
+.header-slider-item {
+    list-style-type: none;
+}
+
+.header-slider-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: #000000;
+}
+
+.slider-parameters-number {
+    font-size: 36px;
+    color: #000000
+}
+
+.header-slider-parameters span {
+    font-size: 16px;
+    color: #444444;
+}
+
+.slider-pagination-item {
+    list-style: none;
+}
+
+
+/* Catalog */
+
+.item {
+    list-style-type: none;
+}
+
+.item a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: -0.02em;
+}
+
+
+/* Delivery */
+
+.delivery {
+    background-color: #F0F0F0;
+}
+
+.slider-conditions li {
+    font-family: "Raleway", sans-serif;
+    line-height: 21.13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #000000;
+    letter-spacing: 0.2em;
+}
+
+.slider-conditions dt {
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    font-weight: 800;
+}
+
+
+/* Delivery on order */
+
+.delivery-on-order p {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 23.48px;
+    background-color: #F0F0F0;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.2em;
+}
+
+
+/* About*/
+
+.about-us li {
+    font-weight: 700;
+    line-height: 20px;
+    color: #000000;
+    letter-spacing: -0.02em;
+}
+
+.contacts address {
+    font-style: normal;
+}
+
+.contacts-name {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.contacts-tel {
+    color: inherit;
+    border-bottom: 1px solid #000000;
+    text-decoration: none;
+}
+
+
+/* Subscribe */
+
+.subscribe {
+    background-color: #f0f0f0;
+}
+
+.subscribe-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.footer-container {
+    background-color: #444444;
+}
+
+.footer-container a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-container p {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff
+}
+
+.footer-nav {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 21.13px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+
+/* border-bottom вместо underline задействовала, потому что в макете линия цельная, а при подчеркивании она прерывается на скобках + выше в телефоне то же самое (блок с контактами имею в виду). Как сделать правильно? */
+
+.footer-tel {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-nav {
+    list-style-type: none;
+}
+
+.footer-socials {
+    list-style: none;
+}

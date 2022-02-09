@@ -1,3 +1,24 @@
+/* Colors */
+
+:root {
+    --black: #000000;
+    --dark: #444444;
+    --gray: #dcdcdc;
+    --light-gray: #ebebeb;
+    --light: #f0f0f0;
+    --white: #ffffff;
+    --yellow: #ffe17f;
+    --yellow-hover: #ffc700;
+    --violet: #af4fff;
+    --red: #ff3d3d;
+    --orange: #fd912e;
+    --green: #08af00;
+}
+
+
+/* цвета внесла все, что были указаны в палитре в макете» */
+
+
 /* Fonts */
 
 @font-face {
@@ -47,8 +68,8 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    background-color: #ffffff;
-    color: #444444;
+    background-color: var(--white);
+    color: var(--dark);
 }
 
 .btn-more {
@@ -56,7 +77,7 @@ body {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 21.13px;
-    color: #000000;
+    color: var(--black);
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.2em;
@@ -70,7 +91,7 @@ body {
     top: 35%;
     width: 100%;
     height: 8px;
-    background-color: #FFE17F;
+    background-color: var(--yellow);
     z-index: -1;
 }
 
@@ -79,7 +100,7 @@ h2 {
     font-size: 50px;
     font-weight: 800;
     line-height: 50px;
-    color: #000000;
+    color: var(--black);
 }
 
 
@@ -89,13 +110,13 @@ h2 {
 /* Формы пока что не трогала */
 
 .header-top {
-    background-color: #FFE17F;
-    color: #000000;
+    background-color: var(--yellow);
+    color: var(--black);
 }
 
 .header-navigation a {
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
 }
 
 .header-login::before {
@@ -156,17 +177,17 @@ h2 {
     font-size: 50px;
     font-weight: 800;
     line-height: 50px;
-    color: #000000;
+    color: var(--black);
 }
 
 .slider-parameters-number {
     font-size: 36px;
-    color: #000000
+    color: var(--black);
 }
 
 .header-slider-parameters span {
     font-size: 16px;
-    color: #444444;
+    color: var(--dark)
 }
 
 .slider-pagination-item {
@@ -183,7 +204,7 @@ h2 {
 .item-img {
     width: 160px;
     height: 160px;
-    background-color: #FFE17F;
+    background-color: var(--yellow);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -218,7 +239,7 @@ h2 {
     font-weight: 800;
     line-height: 24px;
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
     letter-spacing: -0.02em;
 }
 
@@ -226,11 +247,11 @@ h2 {
 /* Delivery */
 
 .delivery {
-    background-color: #F0F0F0;
+    background-color: var(--light);
 }
 
 .slider-conditions ul {
-    border-right: 7px solid #000000;
+    border-right: 7px solid var(--black);
 }
 
 .slider-conditions li {
@@ -240,7 +261,7 @@ h2 {
     font-weight: 800;
     text-transform: uppercase;
     list-style-type: none;
-    color: #000000;
+    color: var(--black);
     letter-spacing: 0.2em;
     z-index: 1;
 }
@@ -252,7 +273,7 @@ h2 {
     top: 35%;
     width: 100%;
     height: 8px;
-    background-color: #FFE17F;
+    background-color: var(--yellow);
     z-index: -1;
 }
 
@@ -260,13 +281,13 @@ h2 {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     line-height: 50px;
-    color: #000000;
+    color: var(--black);
     font-weight: 800;
 }
 
 .slider-conditions .delivery-slider-active {
-    background-color: #000000;
-    color: #FFE17F;
+    background-color: var(--black);
+    color: var(--yellow);
 }
 
 
@@ -277,16 +298,16 @@ h2 {
     font-size: 20px;
     font-weight: 800;
     line-height: 23.48px;
-    background-color: #F0F0F0;
+    background-color: var(--light);
     text-transform: uppercase;
-    color: #000000;
+    color: var(--black);
     letter-spacing: 0.2em;
 }
 
 .delivery-on-order-icon {
     width: 125px;
     height: 100px;
-    background-color: #FFE17F;
+    background-color: var(--yellow);
     background-image: url("../images/icons/truck-icon.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -299,14 +320,14 @@ h2 {
 .about-us li {
     font-weight: 700;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
     letter-spacing: -0.02em;
     list-style-type: none;
 }
 
 .about-us li::before {
     content: '\2022';
-    color: #FFC700;
+    color: var(--yellow-hover);
 }
 
 .contacts address {
@@ -320,7 +341,7 @@ h2 {
 
 .contacts-tel {
     color: inherit;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid var(--black);
     text-decoration: none;
 }
 
@@ -328,7 +349,7 @@ h2 {
 /* Subscribe */
 
 .subscribe {
-    background-color: #f0f0f0;
+    background-color: var(--light);
     position: relative;
 }
 
@@ -355,18 +376,18 @@ h2 {
 /* Footer */
 
 .footer-container {
-    background-color: #444444;
+    background-color: var(--dark);
 }
 
 .footer-container a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
 .footer-container p {
     font-size: 16px;
     line-height: 19px;
-    color: #ffffff
+    color: var(--white);
 }
 
 .footer-nav {
@@ -378,17 +399,14 @@ h2 {
     list-style-type: none;
 }
 
-
-/* border-bottom вместо underline задействовала, потому что в макете линия цельная, а при подчеркивании она прерывается на скобках + выше в телефоне то же самое (блок с контактами имею в виду). Как сделать правильно? */
-
 .footer-tel {
     font-size: 16px;
     line-height: 20px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--white);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.footer-socials li {
+.footer-socials {
     list-style: none;
 }
 
@@ -428,7 +446,7 @@ h2 {
 /* General */
 
 .main-inner {
-    color: #000000;
+    color: var(--black);
 }
 
 
@@ -467,7 +485,7 @@ h2 {
 }
 
 .catalog-filters {
-    background-color: #f0f0f0;
+    background-color: var(--light);
 }
 
 
@@ -484,8 +502,8 @@ h2 {
 }
 
 .sort-control {
-    background: #f0f0f0;
-    border: 1px solid #f0f0f0;
+    background: var(--light);
+    border: 1px solid var(--light);
 }
 
 .sort-mark {
@@ -514,7 +532,7 @@ h2 {
 
 .product-price {
     line-height: 21.33px;
-    color: #444444;
+    color: var(--dark);
 }
 
 .product-name {
@@ -542,7 +560,7 @@ h2 {
 /* Pagination */
 
 .pagination {
-    background: #EBEBEB;
+    background: var(--light-gray);
 }
 
 .pagination-item {
@@ -559,7 +577,7 @@ h2 {
 
 .pagination-prev,
 .pagination-next {
-    color: #000000;
+    color: var(--black);
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 21px;

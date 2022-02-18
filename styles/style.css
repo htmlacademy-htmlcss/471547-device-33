@@ -157,6 +157,7 @@ h2 {
 
 .header-logo {
     margin-bottom: 40px;
+    width: 145px;
 }
 
 
@@ -808,21 +809,64 @@ p.contacts-name {
 
 .main-inner {
     color: var(--black);
+    background-color: var(--light);
+}
+
+.page-undertop-container {
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 
 /* Header */
 
+.header-top {
+    margin-bottom: 35px;
+}
+
 .topmenuitem-disabled {
     opacity: 0.3;
+}
+
+.header-top-catalog {
+    height: 186px;
+}
+
+
+/* Main */
+
+.catalog-top {
+    background-color: var(--white);
+}
+
+.catalog-head h1 {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: "Raleway", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 50px;
+    color: var(--black);
+}
+
+.catalog-products-container {
+    display: flex;
+    width: 1160px;
+    background-color: var(--light);
 }
 
 
 /* Breadcrumbs */
 
 .breadcrumbs {
+    display: flex;
     font-size: 16px;
     line-height: 19px;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 35px;
 }
 
 .breadcrumbs-link {
@@ -832,6 +876,10 @@ p.contacts-name {
 
 .breadcrumbs-item {
     list-style-type: none;
+}
+
+.breadcrumbs-item:not(:last-child) {
+    margin-right: 36px;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -845,21 +893,47 @@ p.contacts-name {
     background-size: contain;
 }
 
-.catalog-filters {
-    background-color: var(--light);
-}
-
 
 /* Фильтры + блок сортировки */
 
+.products {
+    width: 840px;
+    background-color: var(--white);
+}
+
+.products h2 {
+    margin: 0;
+}
+
+.catalog-filters {
+    margin-right: 60px;
+    margin-left: 60px;
+    padding-top: 25px;
+}
+
+.catalog-sort {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    background-color: var(--light);
+}
+
 .catalog-filters-title,
 .catalog-sort p {
+    margin: 0;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.filter-first {
+    border-bottom: 3px solid black;
+    width: 200px;
 }
 
 .sort-control {
@@ -887,8 +961,31 @@ p.contacts-name {
 
 /* Сетка с товарами */
 
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 44px;
+    background-color: var(--white);
+}
+
 .products-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 44px;
     list-style-type: none;
+}
+
+.products-item:nth-child(odd) {
+    margin-right: 40px;
+}
+
+.product-image {
+    width: 360px;
+    height: 380px;
+    margin-bottom: 32px;
+    display: block;
 }
 
 .product-price {
@@ -905,7 +1002,12 @@ p.contacts-name {
 }
 
 .load-more-btn {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 44px;
+    display: block;
     text-align: center;
+    padding: 18px 0;
     text-decoration: none;
     color: inherit;
     font-family: "Raleway", sans-serif;
@@ -915,17 +1017,42 @@ p.contacts-name {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     border: 3px solid #E5E5E5;
+    background-color: var(--white);
 }
 
 
 /* Pagination */
 
+.page-inner-container {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.pagination-list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+}
+
 .pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     background: var(--light-gray);
+    margin-bottom: 78px;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 
 .pagination-item {
     list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 25px;
 }
 
 .pagination-link,
@@ -944,4 +1071,12 @@ p.contacts-name {
     line-height: 21px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.pagination-prev {
+    margin-left: 25px;
+}
+
+.pagination-next {
+    margin-right: 25px;
 }
